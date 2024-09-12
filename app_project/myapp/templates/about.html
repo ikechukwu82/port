@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - My Portfolio</title>
+
+    {% load static%}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/about.css' %}" />
+  </head>
+  <body>
+    <div class="bg-image"></div>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <div class="container">
+          <img src="{% static 'images/profile.jpeg' %}" alt="Profile Picture" class="profile-pic" />
+          <div class="about-content">
+            <h1>About Me</h1>
+            <p>
+              Hello! I'm Michael, a passionate web developer, and graphic
+              designer based in Nigeria. <br />With a strong background in
+              front-end development and UI/UX design, I thrive on turning
+              complex ideas into simple, beautiful, and user-friendly designs.
+              <br />
+              Over the past months, I’ve worked on diverse projects, ranging
+              from a responsive Real estate portfolio to a responsive
+              calculator. <br />My approach is always centred on innovation, &
+              collaboration, ensuring that every project I work on meets and
+              exceeds expectations. <br />I graduated from the University of
+              Michigan with a Computer science and graphic design degree, which
+              provided me with a solid foundation in problem-solving and
+              creative thinking. <br />Since then, I’ve continually expanded my
+              skill set, learning new tools and techniques to stay ahead in the
+              fast-evolving tech/design world. <br />When I’m not busy coding or
+              designing, you can find me exploring the outdoors, reading up on
+              the latest tech trends, or experimenting with new design
+              techniques. <br />
+              I’m always open to new challenges and opportunities, so if you
+              have a project in mind or just want to say hello, feel free to
+              connect with me. Thank you for visiting my portfolio. <br />
+              I look forward to collaborating with you on your next project!.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Michael Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="{% static 'js/main.js' %}" defer></script>
+  </body>
+</html>

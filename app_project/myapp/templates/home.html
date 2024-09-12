@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <div class="container">
+          <img src="{% static 'images/profile.jpeg' %}" alt="" class="profile-pic" />
+          <div class="about-content">
+            <h1>About Me</h1>
+            <p>
+              Hello! I'm Michael a web developer passionate about creating
+              beautiful and functional websites,UI/UX designer and also a Data Analyst.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <h2>My Projects</h2>
+          <div class="project-grid">
+            <div class="project">
+              <img
+                src="{% static 'images/presson-real-estate-website-design.jpg' %}"
+                alt="Real Estate Project"
+              />
+              <h3>Project 1</h3>
+              <p>Real Estate Project</p>
+            </div>
+            <div class="project">
+              <img
+                src="{% static 'images/3_sales-page-wordpress-themes.jpg' %}"
+                alt="Project 2"
+              />
+              <h3>Project 2</h3>
+              <p>Kallyas e-commerce project</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="container">
+          <h2>My Skills</h2>
+          <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Michael Portfolio. All rights reserved.</p>
+    </footer>
+
+    <button class="back-to-top" style="display: none">↑</button>
+
+    <script src="{% static 'js/main.js' %}" defer></script>
+  </body>
+</html>

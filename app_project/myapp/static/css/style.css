@@ -1,0 +1,7 @@
+body {
+  background-image: url("/static/images/background.jpg"); /* Adjust the path as needed */
+  background-size: cover; /* This ensures the image covers the entire background */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the background fixed when scrolling */
+  background-position: center; /* Centers the background image */
+}
